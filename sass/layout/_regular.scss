@@ -1,0 +1,44 @@
+.regular {
+    padding-top: 94px;
+    padding-bottom: 94px;
+}
+
+.regular-title {
+    margin-bottom: 50px;
+}
+
+.regular-list {
+    display: flex;
+    margin-left: -30px;
+
+}
+
+.regular-item {
+    flex-basis: calc(100% / 6 - 30px);
+    margin-left: 30px;
+}
+
+.regular-link {
+    width: 170px;
+    height: 92px;
+    border-radius: 4px;
+    border: 1px solid #AFB1B8;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    fill: #AFB1B8;
+    transition: border 250ms cubic-bezier(0.4, 0, 0.2, 1);
+
+    &:hover,
+    &:focus {
+        border: 1px solid #2196F3;
+        fill: #2196F3;
+
+    }
+
+}
+
+.regular-icon {
+    transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}

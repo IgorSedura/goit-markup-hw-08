@@ -1,0 +1,40 @@
+.about {
+    padding-bottom: 94px;
+}
+
+.about__title {
+    margin-bottom: 50px;
+}
+
+.about__list {
+    display: flex;
+    margin-left: -30px;
+
+}
+
+.about__item {
+
+    flex-basis: calc(100% / 3 - 30px);
+    margin-left: 30px;
+
+}
+
+
+.about__card {
+    position: relative;
+}
+
+.about__text {
+    position: absolute;
+    @include font(700, 14px, 1.14, 0.03em);
+    text-transform: uppercase;
+    color: #FFFFFF;
+    background-color: rgba(47, 48, 58, 0.8);
+    ;
+    width: 100%;
+    height: 70px;
+    text-align: center;
+    padding-top: 27px;
+    padding-bottom: 27px;
+    bottom: 0;
+}

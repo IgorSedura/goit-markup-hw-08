@@ -1,0 +1,5 @@
+.top-title {
+    @include font(700, 36px, 1.16, 0.03em);
+    text-align: center;
+    color: var(--second-text-color)
+}
