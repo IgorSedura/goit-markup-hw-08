@@ -1,12 +1,26 @@
 .team {
 
     background: #F5F4FA;
-    padding-top: 94px;
-    padding-bottom: 94px;
+
+
+
+
+    @include mobile {
+        padding-top: 60px;
+        padding-bottom: 60px;
+
+    }
+
+    @include desktop {
+        padding-top: 94px;
+        padding-bottom: 94px;
+
+    }
 }
 
 .team-top__title {
     margin-bottom: 50px;
+
 }
 
 .team__title {
@@ -24,6 +38,10 @@
 
 }
 
+.team__imag {
+    width: 100%;
+}
+
 .team__item {
     background: #FFFFFF;
     box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
@@ -32,13 +50,23 @@
 
 .team__list {
     display: flex;
-    margin-left: -30px;
+    flex-wrap: wrap;
+    gap: 30px;
+    list-style: none;
 
 }
 
 .team__item {
-    flex-basis: calc(100% / 4 - 30px);
-    margin-left: 30px;
+
+
+    @include tablet {
+        width: calc((100% - 30px) / 2);
+    }
+
+    @include desktop {
+        width: calc((100% - 90px) / 4);
+
+    }
 
 }
 

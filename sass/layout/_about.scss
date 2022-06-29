@@ -1,5 +1,16 @@
 .about {
     padding-bottom: 94px;
+
+    @include mobile {
+        display: none;
+
+    }
+
+
+    @include desktop {
+        display: block;
+
+    }
 }
 
 .about__title {

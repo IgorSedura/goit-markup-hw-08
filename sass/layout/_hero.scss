@@ -10,6 +10,7 @@
     margin: 0 auto;
     padding-top: 200px;
     padding-bottom: 200px;
+    width: 100%;
 }
 
 .hero {
@@ -19,10 +20,22 @@
 
 
 .hero-title {
-    @include font(900, 44px, 1.36, 0.06em);
+    margin: auto;
+    margin-bottom: 30px;
+
+    @include mobile {
+        width: 360px;
+    }
+
+    @include font(900, 26px, 1.62, 0.06em);
     text-transform: uppercase;
     color: var(--white-color);
     margin-bottom: 30px;
+
+    @include desktop {
+        @include font(900, 44px, 1.36, 0.06em);
+        width: 696px;
+    }
 
 }
 
@@ -39,10 +52,4 @@
     min-width: 200px;
     height: 50px;
 
-}
-
-.hero-title {
-    width: 690px;
-    margin: auto;
-    margin-bottom: 30px;
 }
