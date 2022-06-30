@@ -27,7 +27,8 @@
 .footer-logo {
     font-family: 'Raleway';
     font-style: normal;
-    @include font(700, 26px, 1.19, 0.03em);
+    @include font(700, 24px, 1.16, 0.03em);
+
     color: #FFFFFF;
     display: flex;
     justify-content: center;
@@ -36,6 +37,7 @@
 
     @include desktop {
         justify-content: flex-start;
+        @include font(700, 26px, 1.19, 0.03em);
     }
 
 }
