@@ -3,6 +3,25 @@
     padding-top: 60px;
     padding-bottom: 60px;
 
+
+
+}
+
+.footer-address {
+    margin: 0 auto;
+
+    @include tablet {
+        margin: 0;
+    }
+}
+
+.footer-addree-soc {
+    @include tablet {
+        display: flex;
+        justify-content: space-around;
+
+    }
+
 }
 
 .footer-logo {
@@ -10,8 +29,31 @@
     font-style: normal;
     @include font(700, 26px, 1.19, 0.03em);
     color: #FFFFFF;
-    display: inline-block;
+    display: flex;
+    justify-content: center;
     margin-bottom: 20px;
+    text-align: center;
+
+    @include desktop {
+        justify-content: flex-start;
+    }
+
+}
+
+.footer-list {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 60px;
+
+    @include desktop {
+        margin-bottom: 0;
+    }
+
+    @include desktop {
+        align-items: flex-start;
+    }
 
 }
 
@@ -42,7 +84,11 @@
 
 
 .footer-item:not(:last-child) {
-    margin-bottom: 9px;
+    margin-bottom: 8px;
+
+    @include desktop {
+        margin-bottom: 9px
+    }
 }
 
 .footer-title {
@@ -50,6 +96,11 @@
     text-transform: uppercase;
     color: #EEEEEE;
     margin-bottom: 20px;
+    text-align: center;
+
+    @include desktop {
+        text-align: start;
+    }
 }
 
 .footer-soc-item {
@@ -60,11 +111,19 @@
 }
 
 .footer-soc {
-    margin-left: 70px;
+
+    align-items: center;
+
+    @include desktop {
+        margin-left: 70px;
+    }
 }
 
 .footer-soc-list {
     display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 60px;
 }
 
 .footer-soc-link {
@@ -96,11 +155,14 @@
 }
 
 .footer .container {
-    display: flex;
+    @include desktop {
+        display: flex;
+    }
+
 }
 
 .footer-form-imput {
-    width: 358px;
+    width: 100%;
     height: 50px;
     border: 1px solid rgba(255, 255, 255, 0.3);
     filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
@@ -109,10 +171,15 @@
     padding-left: 16px;
     background-color: #2F303A;
     color: #FFFFFF;
+    margin-bottom: 20px;
 
     &::placeholder {
         @include font(400, 16px, 1.25, 0.03em);
         color: rgba(255, 255, 255, 0.6);
+    }
+
+    @include desktop {
+        width: 358px;
     }
 
 }
@@ -123,7 +190,11 @@
 
 .footer-form-field {
     align-items: center;
-    margin-left: 93px;
+
+    @include desktop {
+        margin-left: 93px;
+    }
+
 }
 
 .footer-subscribe {
@@ -131,6 +202,11 @@
     text-transform: uppercase;
     color: #FFFFFF;
     margin-bottom: 20px;
+    text-align: center;
+
+    @include desktop {
+        text-align: start;
+    }
 }
 
 .footer-form-btn {
@@ -147,6 +223,16 @@
     text-align: left;
     padding-left: 29px;
     cursor: pointer;
+    display: block;
+    margin: 0 auto;
+
+    @include desktop {
+        display: inline-block;
+        margin: 0;
+        margin-left: 12px;
+    }
+
+
 }
 
 .footer-form-icon {
