@@ -2,7 +2,6 @@
 
     font-family: 'Raleway';
     @include font(700, 24px, 1.19, 0.03em);
-    // @include font(700, 26, 1.19, 0.03em);
     color: var(--black-color);
 
     &-color {
@@ -10,4 +9,8 @@
     }
 
     align-items: center;
+
+    @include desktop {
+        @include font(700, 26px, 1.19, 0.03em);
+    }
 }

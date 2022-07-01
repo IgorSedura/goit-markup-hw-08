@@ -24,20 +24,27 @@
     <header class="header">
       <div class="container">
         <nav class="nav">
-          <a href="./" class="logo link"
-            ><span class="logo-color">Web</span>Studio</a
-          >
+          <div class="nav-mobile">
+            <a href="./" class="logo link"
+              ><span class="logo-color">Web</span>Studio</a
+            >
+            <button class="nav-btn" type="button">
+              <svg class="nav-icon-menu" width="40" height="40">
+                <use href="./images/icons.svg#icon-menu"></use>
+              </svg>
+            </button>
+          </div>
 
           <ul class="nav-list">
-            <li class="nav-item list">
+            <li class="nav-item tab list">
               <a class="nav-link link" href="./">Студия</a>
             </li>
-            <li class="nav-item list">
+            <li class="nav-item tab list">
               <a class="nav-link current link" href="./portfolio.html"
                 >Портфолио</a
               >
             </li>
-            <li class="nav-item list">
+            <li class="nav-item tab list">
               <a class="nav-link link" href="">Контакты</a>
             </li>
           </ul>
