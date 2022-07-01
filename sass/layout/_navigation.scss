@@ -37,7 +37,14 @@
 
     @include tablet {
         display: inline-block;
+        padding-top: 21px;
+        padding-bottom: 21px;
 
+    }
+
+    @include desktop {
+        padding-top: 32px;
+        padding-bottom: 32px;
     }
 
     @include desktop {
@@ -161,6 +168,10 @@
 }
 
 .logo {
+    @include mobile {
+        padding-top: 26px;
+        padding-bottom: 26px;
+    }
 
     @include tablet {
         padding-top: 25px;
@@ -169,7 +180,7 @@
     }
 
     @include desktop {
-        padding-top: 25px;
+        padding-top: 24px;
         padding-bottom: 25px;
         margin-right: 93px;
 
@@ -192,8 +203,7 @@
     margin-right: 50px;
 }
 
-.nav-list,
-.nav-contacts {
+.nav-list {
     @include tablet {
         padding-top: 32px;
         padding-bottom: 32px;

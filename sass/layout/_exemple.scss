@@ -1,6 +1,19 @@
 .exemple {
-    padding-top: 94px;
-    padding-bottom: 94px;
+    @include mobile {
+        padding-top: 60px;
+        padding-bottom: 40px;
+    }
+
+    @include tablet {
+        padding-top: 60px;
+        padding-bottom: 30px;
+    }
+
+    @include desktop {
+        padding-top: 94px;
+        padding-bottom: 50px;
+    }
+
 }
 
 
@@ -14,10 +27,36 @@
     color: var(--main-text-color)
 }
 
+.button-item {
+    margin-bottom: 15px;
+}
+
 
 .exemple-list-button {
-    display: flex;
-    justify-content: center;
+
+    @include mobile {
+        display: flex;
+        justify-content: flex-start;
+        flex-wrap: wrap;
+        margin-bottom: -15px;
+
+    }
+
+    ;
+
+    @include tablet {
+        display: flex;
+        justify-content: center;
+    }
+
+    ;
+
+    @include desktop {
+        display: flex;
+        justify-content: center;
+    }
+
+    ;
 
 }
 
@@ -29,15 +68,21 @@
 .example-list {
     display: flex;
     flex-wrap: wrap;
-    margin-right: -30px;
-    margin-bottom: -30px;
+    gap: 30px;
+    list-style: none;
 
 }
 
 .exemple-item {
-    flex-basis: calc(100% / 3 - 30px);
-    margin-right: 30px;
-    margin-bottom: 30px;
+    @include tablet {
+        width: calc((100% - 30px) / 2);
+    }
+
+    @include desktop {
+        width: calc((100% - 60px) / 3);
+
+    }
+
     outline: 1px solid #EEEEEE;
 
     &:hover,

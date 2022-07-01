@@ -1,5 +1,12 @@
 .checkbox {
-    @include font(400, 14px, 1.71, 0.03em);
+    @include mobile {
+        @include font(400, 12px, 1.16, 0.03em);
+    }
+
+    @include desktop {
+        @include font(400, 14px, 1.71, 0.03em);
+    }
+
     color: #757575;
     display: flex;
     align-items: center;
