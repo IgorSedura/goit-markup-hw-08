@@ -25,9 +25,14 @@ body {
   padding-left: 15px;
   padding-right: 15px;
 }
-@media screen and (min-width: 414px) {
+@media screen and (max-width: 480px) {
   .container {
-    width: 414px;
+    width: 100%;
+  }
+}
+@media screen and (min-width: 480px) {
+  .container {
+    width: 480px;
   }
 }
 @media screen and (min-width: 768px) {
@@ -93,11 +98,20 @@ body {
 .checkbox {
   color: #757575;
   display: flex;
-  align-items: center;
+  align-items: baseline;
+  justify-content: space-between;
   cursor: pointer;
   margin-bottom: 30px;
 }
-@media screen and (min-width: 414px) {
+@media screen and (max-width: 480px) {
+  .checkbox {
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 1.16;
+    letter-spacing: 0.03em;
+  }
+}
+@media screen and (min-width: 480px) {
   .checkbox {
     font-weight: 400;
     font-size: 12px;
@@ -113,6 +127,11 @@ body {
     letter-spacing: 0.03em;
   }
 }
+@media screen and (max-width: 480px) {
+  .checkbox {
+    display: block;
+  }
+}
 .checkbox::before {
   content: "";
   width: 16px;
@@ -121,6 +140,12 @@ body {
   border-radius: 3px;
   background-image: url();
   margin-right: 7px;
+}
+@media screen and (max-width: 480px) {
+  .checkbox::before {
+    display: inline-block;
+    margin-right: 0;
+  }
 }
 
 .checkbox-imput:checked + .checkbox::before {
@@ -157,7 +182,25 @@ body {
   color: var(--second-text-color);
 }
 
-@media screen and (min-width: 414px) {
+@media screen and (max-width: 480px) {
+  .modal {
+    position: absolute;
+    width: calc(100% - 15px);
+    height: calc(100% - 15px);
+    background-color: #FFFFFF;
+    box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
+    border-radius: 4px;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%) scale(1);
+    transition: transform 350ms;
+    padding: 40px;
+  }
+  .backdrop.is-hidden .modal {
+    transform: translate(-50%, -50%) scale(0);
+  }
+}
+@media screen and (min-width: 480px) {
   .modal {
     position: absolute;
     width: 450px;
@@ -235,7 +278,12 @@ body {
   outline: none;
   cursor: pointer;
 }
-@media screen and (min-width: 414px) {
+@media screen and (max-width: 480px) {
+  .modal-imput {
+    width: 100%;
+  }
+}
+@media screen and (min-width: 480px) {
   .modal-imput {
     width: 370px;
   }
@@ -286,7 +334,12 @@ body {
   outline: none;
   cursor: pointer;
 }
-@media screen and (min-width: 414px) {
+@media screen and (max-width: 480px) {
+  .modal-text {
+    width: 100%;
+  }
+}
+@media screen and (min-width: 480px) {
   .modal-text {
     width: 370px;
   }
@@ -394,7 +447,7 @@ img {
   list-style: none;
 }
 
-@media screen and (min-width: 414px) {
+@media screen and (min-width: 480px) {
   .nav {
     padding-top: 16px;
     padding-bottom: 16px;
@@ -556,7 +609,7 @@ img {
   cursor: pointer;
 }
 
-@media screen and (min-width: 414px) {
+@media screen and (min-width: 480px) {
   .logo {
     padding-top: 26px;
     padding-bottom: 26px;
@@ -660,7 +713,7 @@ img {
   color: var(--white-color);
   margin-bottom: 30px;
 }
-@media screen and (min-width: 414px) {
+@media screen and (min-width: 480px) {
   .hero-title {
     width: 360px;
   }
@@ -757,12 +810,12 @@ img {
 .about {
   padding-bottom: 94px;
 }
-@media screen and (min-width: 414px) {
+@media screen and (min-width: 480px) {
   .about {
     display: none;
   }
 }
-@media screen and (max-width: 414px) {
+@media screen and (max-width: 480px) {
   .about {
     display: none;
   }
@@ -811,7 +864,7 @@ img {
 .team {
   background: #F5F4FA;
 }
-@media screen and (min-width: 414px) {
+@media screen and (min-width: 480px) {
   .team {
     padding-top: 60px;
     padding-bottom: 60px;
@@ -916,7 +969,7 @@ img {
 .team {
   background: #F5F4FA;
 }
-@media screen and (min-width: 414px) {
+@media screen and (min-width: 480px) {
   .team {
     padding-top: 60px;
     padding-bottom: 60px;
@@ -984,7 +1037,7 @@ img {
   margin-bottom: 16px;
 }
 
-@media screen and (min-width: 414px) {
+@media screen and (min-width: 480px) {
   .regular {
     padding-top: 60px;
     padding-bottom: 60px;
@@ -997,7 +1050,7 @@ img {
   }
 }
 
-@media screen and (min-width: 414px) {
+@media screen and (min-width: 480px) {
   .regular-title {
     margin-bottom: 30px;
     font-weight: 700;
@@ -1023,7 +1076,7 @@ img {
   list-style: none;
 }
 
-@media screen and (min-width: 414px) {
+@media screen and (min-width: 480px) {
   .regular-item {
     width: calc((100% - 30px) / 2);
   }
@@ -1305,7 +1358,7 @@ img {
   transform: translateY(-50%);
 }
 
-@media screen and (min-width: 414px) {
+@media screen and (min-width: 480px) {
   .exemple {
     padding-top: 60px;
     padding-bottom: 40px;
@@ -1343,7 +1396,7 @@ img {
   margin-bottom: 15px;
 }
 
-@media screen and (min-width: 414px) {
+@media screen and (min-width: 480px) {
   .exemple-list-button {
     display: flex;
     justify-content: flex-start;

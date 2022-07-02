@@ -5,8 +5,15 @@
     letter-spacing: $ls;
 }
 
+@mixin mobile-xs {
+    @media screen and (max-width: 480px) {
+        @content;
+    }
+
+}
+
 @mixin mobile {
-    @media screen and (min-width: 414px) {
+    @media screen and (min-width: 480px) {
         @content;
     }
 }

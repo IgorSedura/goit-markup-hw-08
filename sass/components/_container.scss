@@ -4,8 +4,12 @@
     padding-left: 15px;
     padding-right: 15px;
 
+    @include mobile-xs {
+        width: 100%;
+    }
+
     @include mobile {
-        width: 414px;
+        width: 480px;
 
     }
 
