@@ -1,13 +1,14 @@
 .exemple {
+    @include mobile-xs {
+        padding-top: 60px;
+        padding-bottom: 40px;
+    }
+
     @include mobile {
         padding-top: 60px;
         padding-bottom: 40px;
     }
 
-    @include tablet {
-        padding-top: 60px;
-        padding-bottom: 30px;
-    }
 
     @include desktop {
         padding-top: 94px;
@@ -33,6 +34,12 @@
 
 
 .exemple-list-button {
+    @include mobile-xs {
+        display: flex;
+        justify-content: flex-start;
+        flex-wrap: wrap;
+        margin-bottom: -15px;
+    }
 
     @include mobile {
         display: flex;
@@ -70,10 +77,12 @@
     flex-wrap: wrap;
     gap: 30px;
     list-style: none;
+    justify-content: center;
 
 }
 
 .exemple-item {
+
     @include tablet {
         width: calc((100% - 30px) / 2);
     }

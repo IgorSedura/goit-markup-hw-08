@@ -3,7 +3,10 @@
     background: #F5F4FA;
 
 
-
+    @include mobile-xs {
+        padding-top: 60px;
+        padding-bottom: 60px;
+    }
 
     @include mobile {
         padding-top: 60px;

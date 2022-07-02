@@ -1,4 +1,9 @@
 .regular {
+    @include mobile-xs {
+        padding-top: 60px;
+        padding-bottom: 60px;
+    }
+
     @include mobile {
         padding-top: 60px;
         padding-bottom: 60px;
@@ -13,6 +18,11 @@
 
 
 .regular-title {
+    @include mobile-xs {
+        margin-bottom: 30px;
+        @include font(700, 28px, 1.17, 0.03em);
+    }
+
     @include mobile {
         margin-bottom: 30px;
         @include font(700, 28px, 1.17, 0.03em);
@@ -33,9 +43,9 @@
 }
 
 .regular-item {
-    @include mobile {
-        width: calc((100% - 30px) / 2);
-    }
+
+    width: calc((100% - 30px) / 2);
+
 
     @include tablet {
         width: calc((100% - 90px) / 3);
