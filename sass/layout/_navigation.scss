@@ -271,12 +271,12 @@
     padding-top: 48px;
     padding-bottom: 48px;
     padding-left: 25px;
-    transform: translateY(0);
+    transform: translateY(-100%);
     transition: 0.5s;
 
 
     &.menu-active {
-        transform: translateY(-100%);
+        transform: translateY(0);
         transition: 0.5s;
 
     }
