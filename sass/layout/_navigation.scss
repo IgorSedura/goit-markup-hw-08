@@ -330,9 +330,9 @@
     @include font (500, 34px, 1.17, 0.02em);
     color: #2196F3;
 
-    @include mobile-xs {
-        @include font (500, 26px, 1.16, 0.02em);
-    }
+    // @include mobile-xs {
+    //     @include font (500, 26px, 1.16, 0.02em);
+    // }
 
 
 }
@@ -356,9 +356,9 @@
     @include font (500, 18px, 1.22, 0.02em);
     color: #2196F3;
 
-    @include mobile-xs {
-        @include font (500, 16px, 1.62, 0.02em);
-    }
+    // @include mobile-xs {
+    //     @include font (500, 16px, 1.62, 0.02em);
+    // }
 }
 
 .mob-soc-border {
