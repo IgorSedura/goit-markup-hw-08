@@ -54,6 +54,7 @@
     @include tablet {
         display: flex;
         justify-content: center;
+        margin-bottom: 30px;
     }
 
     ;
@@ -85,6 +86,7 @@
 
     @include tablet {
         width: calc((100% - 30px) / 2);
+
     }
 
     @include desktop {
@@ -112,6 +114,15 @@
 
 .example-list {
     margin-top: 56px;
+
+    @include mobile {
+        margin-top: 40px;
+    }
+
+    @include tablet {
+        justify-content: flex-start;
+    }
+
 
 }
 

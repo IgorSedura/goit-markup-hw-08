@@ -22,7 +22,27 @@
 }
 
 .team-top__title {
-    margin-bottom: 50px;
+
+
+    @include mobile-xs {
+        margin-bottom: 30px;
+        @include font (700, 28px, 1.17, 0.03em)
+    }
+
+    @include mobile {
+        margin-bottom: 30px;
+        @include font (700, 28px, 1.17, 0.03em)
+    }
+
+    @include tablet {
+        margin-bottom: 30px;
+        @include font (700, 28px, 1.17, 0.03em)
+    }
+
+    @include desktop {
+        margin-bottom: 50px;
+        @include font (700, 36px, 1.16, 0.03em)
+    }
 
 }
 

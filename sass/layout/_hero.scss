@@ -8,8 +8,7 @@
     background-size: cover;
     max-width: 1600px;
     margin: 0 auto;
-    padding-top: 200px;
-    padding-bottom: 200px;
+
     width: 100%;
 
     @include mobile-xs {
@@ -28,6 +27,8 @@
         background-image: linear-gradient(rgba(47, 48, 58, 0.4),
                 rgba(47, 48, 58, 0.4)),
             url(../images/hero-bg-mob.jpg);
+        padding-top: 118px;
+        padding-bottom: 118px;
 
         @include retina {
             background-image: linear-gradient(rgba(47, 48, 58, 0.4),
@@ -40,6 +41,8 @@
         background-image: linear-gradient(rgba(47, 48, 58, 0.4),
                 rgba(47, 48, 58, 0.4)),
             url(../images/hero-bg-tab.jpg);
+        padding-top: 118px;
+        padding-bottom: 118px;
 
 
         @include retina {
@@ -53,6 +56,8 @@
         background-image: linear-gradient(rgba(47, 48, 58, 0.4),
                 rgba(47, 48, 58, 0.4)),
             url(../images/hero-bg.jpg);
+        padding-top: 200px;
+        padding-bottom: 200px;
 
         @include retina {
 
