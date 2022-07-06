@@ -30,6 +30,7 @@
 
 .button-item {
     margin-bottom: 15px;
+
 }
 
 
@@ -54,7 +55,7 @@
     @include tablet {
         display: flex;
         justify-content: center;
-        margin-bottom: 30px;
+
     }
 
     ;
@@ -79,6 +80,7 @@
     gap: 30px;
     list-style: none;
     justify-content: center;
+
 
 }
 
@@ -113,7 +115,7 @@
 }
 
 .example-list {
-    margin-top: 56px;
+
 
     @include mobile {
         margin-top: 40px;
@@ -121,6 +123,11 @@
 
     @include tablet {
         justify-content: flex-start;
+        margin-top: 30px;
+    }
+
+    @include desktop {
+        margin-top: 56px;
     }
 
 
