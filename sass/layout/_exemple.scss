@@ -1,7 +1,7 @@
 .exemple {
     @include mobile-xs {
         padding-top: 60px;
-        padding-bottom: 40px;
+        padding-bottom: 60px;
     }
 
     @include mobile {
@@ -9,10 +9,15 @@
         padding-bottom: 40px;
     }
 
+    @include tablet {
+        padding-top: 60px;
+        padding-bottom: 60px;
+    }
+
 
     @include desktop {
         padding-top: 94px;
-        padding-bottom: 50px;
+        padding-bottom: 94px;
     }
 
 }
@@ -116,6 +121,9 @@
 
 .example-list {
 
+    @include mobile-xs {
+        margin-top: 40px;
+    }
 
     @include mobile {
         margin-top: 40px;
@@ -127,7 +135,7 @@
     }
 
     @include desktop {
-        margin-top: 56px;
+        margin-top: 50px;
     }
 
 

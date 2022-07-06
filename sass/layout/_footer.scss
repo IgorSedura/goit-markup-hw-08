@@ -187,8 +187,10 @@
         margin-right: auto;
     }
 
+
     @include desktop {
         width: 358px;
+        display: inline;
 
     }
 
